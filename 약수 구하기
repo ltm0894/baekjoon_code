@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main(void)
+{
+	int n;
+	int k;
+	scanf("%d %d", &n, &k);
+
+	int nums[10000] = { 0, };
+	int i = 1;
+	int cnt = 1;
+	while (n >= i) {
+		if (n % i == 0) {
+			nums[cnt] = i;
+			++cnt;
+		}
+		++i;
+	}
+	if (i >= k) {
+		printf("%d\n", nums[k]);
+	}
+	else {
+		printf("0\n");
+	}
+	return 0;
+}
