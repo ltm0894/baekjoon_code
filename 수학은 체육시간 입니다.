@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main(void)
+{
+	unsigned int n;
+	scanf("%u", &n);
+
+	unsigned int r;
+	r = 4 * n;
+
+	printf("%u\n", r);
+
+	return 0;
+}
