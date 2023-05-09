@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(void)
+{
+	int a1, a0, c, n0;
+	scanf("%d %d %d %d", &a1, &a0, &c, &n0);
+
+	if (n0 * (c - a1) >= a0 && c-a1 >= 0) {
+		printf("1\n");
+	}
+	else {
+		printf("0\n");
+	}
+
+	return 0;
+}
